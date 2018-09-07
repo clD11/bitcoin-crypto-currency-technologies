@@ -1,5 +1,7 @@
 package bitcoin.cryptocurrency.technologies.solution.assignment1starterCode;
 
+import jdk.jshell.spi.ExecutionControl;
+
 public class TxHandler {
 
     /**
@@ -22,6 +24,7 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
         // IMPLEMENT THIS
+        return true;
     }
 
     /**
@@ -31,6 +34,7 @@ public class TxHandler {
      */
     public Transaction[] handleTxs(Transaction[] possibleTxs) {
         // IMPLEMENT THIS
+        throw new RuntimeException();
     }
 
 }
