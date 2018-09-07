@@ -24,6 +24,13 @@ public class TxHandler {
      */
     public boolean isValidTx(Transaction tx) {
         // IMPLEMENT THIS
+        double totalOutput = 0;
+        for (Transaction.Output output : tx.getOutputs()) {
+            if (output.value < 0) {
+                return false;
+            }
+            totalOutput += output.value;
+        }
         return true;
     }
 
